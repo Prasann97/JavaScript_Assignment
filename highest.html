@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<head>
+		<script>
+			function Highest()
+			{
+				var x, y, z;
+				x = Number(document.getElementById("N").value);
+				y = Number(document.getElementById("M").value);
+				z = Number(document.getElementById("O").value);
+
+				if(x>y && x>z)
+				{
+					window.alert(x+"-is greatest");
+				}
+				else if(y>x && y>z)
+				{
+					window.alert(y+"-is greatst");
+				}
+				else if(z>y && z>x)
+				{
+					window.alert(z+"-is greatest");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Prasanna D. Borate</h1>
+		<br>
+		Enter number 1: <input type="text" id="N"></input><br>
+		Enter number 2: <input type="text" id="M"></input><br>
+		Enter number 3: <input type="text" id="O"></input><br>
+		<center><button onclick="Highest()">OK</button>
+	</body>
+</html>
